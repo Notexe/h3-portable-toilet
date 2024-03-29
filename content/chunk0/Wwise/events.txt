@@ -1,0 +1,1 @@
+00932790D9E1A201.WWEV,[assembly:/sound/wwise/exportedwwisedata/Events/Notex/Portable_Toilet/Play_slidewhistleup.wwiseevent].pc_wwisebank

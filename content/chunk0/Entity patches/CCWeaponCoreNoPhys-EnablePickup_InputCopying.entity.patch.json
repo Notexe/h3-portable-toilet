@@ -1,0 +1,13 @@
+{
+	"tempHash": "0022B96FF03F08F5",
+	"tbluHash": "002D7623B71852D7",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"ed5783eb51d1f93f",
+				{ "AddInputCopyConnection": ["EnablePickup", "EnablePickup", "b131a6cf2fdeaf16"] }
+			]
+		}
+	],
+	"patchVersion": 6
+}

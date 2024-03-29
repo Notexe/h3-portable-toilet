@@ -1,0 +1,23 @@
+{
+	"PROP_FURNITURE_PORTABLETOILET": {
+		"Id": "PROP_FURNITURE_PORTABLETOILET",
+		"Guid": "b7bccfd6-26ce-4555-bed1-3c1ead9a4f0c",
+		"Type": "gear",
+		"Subtype": "tool",
+		"ImageId": "",
+		"RMTPrice": 149,
+		"GamePrice": 149,
+		"IsPurchasable": false,
+		"IsPublished": true,
+		"IsDroppable": false,
+		"Capabilities": [],
+		"Qualities": {},
+		"Properties": {
+			"Quality": 4,
+			"LoadoutSlot": "gear",
+			"Rarity": "common",
+			"RepositoryId": "32e0cf30-508a-4982-a9e9-fb9bb856453e"
+		},
+		"Rarity": "common"
+	}
+}

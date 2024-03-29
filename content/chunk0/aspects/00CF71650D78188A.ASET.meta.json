@@ -1,0 +1,26 @@
+{
+	"hash_value": "00CF71650D78188A",
+	"hash_path": "[assembly:/templates/aspectdummy.aspect]([assembly:/_pro/environment/geometry/props/toilets/portable_toilet_a.wl2?/portable_toilet_a_rigid.prim].entitytype,[modules:/zgeomscalesaveaspect.class].entitytype).pc_entitytype",
+	"hash_offset": 24235707,
+	"hash_size": 2147483648,
+	"hash_resource_type": "ASET",
+	"hash_reference_table_size": 31,
+	"hash_reference_table_dummy": 0,
+	"hash_size_final": 12,
+	"hash_size_in_memory": 4294967295,
+	"hash_size_in_video_memory": 4294967295,
+	"hash_reference_data": [
+		{
+			"hash": "[assembly:/_pro/environment/geometry/props/toilets/portable_toilet_a.wl2?/portable_toilet_a_rigid.prim].pc_entitytype",
+			"flag": "1F"
+		},
+		{
+			"hash": "[modules:/zgeomscalesaveaspect.class].pc_entitytype",
+			"flag": "1F"
+		},
+		{
+			"hash": "[assembly:/templates/aspectdummy.aspect]([assembly:/templates/geometrytemplaterigidbody.template?/geomentity01.entitytemplate].entitytype,[modules:/zgeomscalesaveaspect.class].entitytype).pc_entityblueprint",
+			"flag": "1F"
+		}
+	]
+}

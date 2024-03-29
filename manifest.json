@@ -1,9 +1,25 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
 	"version": "0.1.0",
-	"id": "YourPreferredAlias.AnIDForTheMod",
-	"name": "Test Mod",
-	"description": "A truly amazing mod",
-	"authors": ["Your Preferred Alias"],
+	"id": "Notex.PortableToilet",
+	"name": "Portable Toilet",
+	"description": "This portable toilet is enhanced with cutting-edge military technology from Kronstadt Industries, designed to expand upon contact with the ground. Beyond its size-adjusting capabilities, this innovative device serves as an attraction point for any nearby NPCs feeling unwell, making it an indispensable tool for any discerning assassin.",
+	"authors": ["Notex"],
+	"contentFolders": ["content"],
+	"blobsFolders": ["blobs"],
+	"dependencies": [
+		{
+			"runtimeID": "00B9C8693870AD7C",
+			"portFromChunk1": true,
+			"toChunk": 0
+		},
+		"007D7BD3E9CEE479"
+	],
+	"localisation": {
+		"english": {
+			"UI_PROP_FURNITURE_PORTABLETOILET_NAME": "Portable Toilet",
+			"UI_PROP_FURNITURE_PORTABLETOILET_DESC": "This portable toilet is enhanced with cutting-edge military technology from Kronstadt Industries, designed to expand upon contact with the ground. Beyond its size-adjusting capabilities, this innovative device serves as an attraction point for any nearby NPCs feeling unwell, making it an indispensable tool for any discerning assassin."
+		}
+	},
 	"frameworkVersion": "2.25.1"
 }

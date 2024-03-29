@@ -1,0 +1,18 @@
+{
+	"tempHash": "00E59DEEA28D48E8",
+	"tbluHash": "004973FB1EE4481E",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"2976fdb948cdcfd5",
+				{
+					"AddPropertyAliasConnection": [
+						"m_pDrowningEnabledCondition",
+						{ "originalProperty": "m_pCondition", "originalEntity": "d1863c42035878e5" }
+					]
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

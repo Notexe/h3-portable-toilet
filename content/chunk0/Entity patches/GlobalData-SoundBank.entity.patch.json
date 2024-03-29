@@ -1,0 +1,24 @@
+{
+	"tempHash": "00097AA87B144150",
+	"tbluHash": "00E738E7CF7A35E1",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafe5a68651cfdca",
+				{
+					"parent": "afe6aaad3dfe3924",
+					"name": "Portable_Toilet_Notex_SoundBank",
+					"factory": "[modules:/zsoundbankentity.class].pc_entitytype",
+					"blueprint": "[modules:/zsoundbankentity.class].pc_entityblueprint",
+					"properties": {
+						"m_pBankResource": {
+							"type": "ZRuntimeResourceID",
+							"value": "[assembly:/sound/wwise/exportedwwisedata/SoundBanks/GlobalData/Portable_Toilet_Notex.wwisesoundbank].pc_wwisebank"
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

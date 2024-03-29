@@ -1,0 +1,18 @@
+{
+	"tempHash": "00D3FD38E751F1B0",
+	"tbluHash": "00A6CD66EC01F950",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"5a81d014671a724d",
+				{
+					"AddPropertyAliasConnection": [
+						"m_bRemoveWaterCenterPhysics",
+						{ "originalProperty": "m_bRemovePhysics", "originalEntity": "84382d281327976f" }
+					]
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

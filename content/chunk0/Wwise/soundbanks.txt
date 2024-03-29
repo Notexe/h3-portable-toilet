@@ -1,0 +1,1 @@
+00EBFDB69613464C.WBNK,[assembly:/sound/wwise/exportedwwisedata/SoundBanks/GlobalData/Portable_Toilet_Notex.wwisesoundbank].pc_wwisebank

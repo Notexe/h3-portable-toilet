@@ -1,0 +1,120 @@
+{
+	"tempHash": "004BD18685926DB3",
+	"tbluHash": "0054E9ACD5C2DFAA",
+	"rootEntity": "cafeef8b303a48d8",
+	"entities": {
+		"cafeef8b303a48d8": {
+			"parent": null,
+			"name": "ItemArt_PortableToilet",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"inputCopying": {
+				"SetVisible": { "SetVisible": ["cafe3626e4adcec4"] },
+				"SetInPhysicsWorld": { "SetInPhysicsWorld": ["cafe3626e4adcec4"] },
+				"KinematicBody": { "KinematicBody": ["cafe3626e4adcec4"] }
+			},
+			"propertyAliases": {
+				"m_eidParent": [{ "originalProperty": "m_eidParent", "originalEntity": "cafe3626e4adcec4" }],
+				"m_mTransform": [{ "originalProperty": "m_mTransform", "originalEntity": "cafe3626e4adcec4" }],
+				"m_ResourceGeometry": [{ "originalProperty": "m_ResourceGeometry", "originalEntity": "cafe3626e4adcec4" }],
+				"m_PrimitiveScale": [{ "originalProperty": "m_PrimitiveScale", "originalEntity": "cafe3626e4adcec4" }]
+			},
+			"exposedEntities": {
+				"HandAttacherSpatial": { "isArray": false, "refersTo": ["cafedfd94a289073"] },
+				"ItemPlacement": { "isArray": false, "refersTo": ["cafed251340035d7"] },
+				"PlacementVolume": { "isArray": false, "refersTo": ["cafeefc48c27a8a9"] }
+			},
+			"exposedInterfaces": {
+				"IPhysicsAccessor": "cafe3626e4adcec4",
+				"ZGeomEntity": "cafe3626e4adcec4",
+				"IDynamicPhysics": "cafe3626e4adcec4",
+				"ZSpatialEntity": "cafe3626e4adcec4"
+			}
+		},
+		"cafe3626e4adcec4": {
+			"parent": "cafeef8b303a48d8",
+			"name": "Portable_Toilet_A_Rigid",
+			"factory": "[assembly:/templates/aspectdummy.aspect]([assembly:/_pro/environment/geometry/props/toilets/portable_toilet_a.wl2?/portable_toilet_a_rigid.prim].entitytype,[modules:/zgeomscalesaveaspect.class].entitytype).pc_entitytype",
+			"blueprint": "[assembly:/templates/aspectdummy.aspect]([assembly:/templates/geometrytemplaterigidbody.template?/geomentity01.entitytemplate].entitytype,[modules:/zgeomscalesaveaspect.class].entitytype).pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": 0, "z": 0 } }
+				},
+				"m_PrimitiveScale": { "type": "SVector3", "value": { "x": 1.0, "y": 1.0, "z": 1.0 } },
+				"m_eRoomBehaviour": { "type": "ZSpatialEntity.ERoomBehaviour", "value": "ROOM_DYNAMIC" },
+				"m_eGlowType": { "type": "ERenderGlowTypes", "value": "ERENDERGLOWTYPE_ITEMS" },
+				"m_eCCD": { "type": "ECCDUsage", "value": "ECCDUSAGE_AGAINST_STATIC" },
+				"m_bStartSleeping": { "type": "bool", "value": true },
+				"m_bIgnoreCharacters": { "type": "bool", "value": false },
+				"m_fFriction": { "type": "float32", "value": 1 },
+				"m_fMass": { "type": "float32", "value": 10 },
+				"m_fRestitution": { "type": "float32", "value": 0.95 },
+				"m_fLinearDampening": { "type": "float32", "value": 1 },
+				"m_fAngularDampening": { "type": "float32", "value": 1 },
+				"m_bVisible": { "type": "bool", "value": true },
+				"m_eidParent": { "type": "SEntityTemplateReference", "value": null }
+			}
+		},
+		"cafedfd94a289073": {
+			"parent": "cafeef8b303a48d8",
+			"name": "HandAttacherSpatial",
+			"factory": "[modules:/zdebuggizmoentity.class].pc_entitytype",
+			"blueprint": "[modules:/zdebuggizmoentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": 106.45171247175278, "y": 0.2680880897236431, "z": 88.16683214016172 },
+						"position": { "x": -0.01, "y": -0.05, "z": 0.24 }
+					}
+				},
+				"m_GizmoGeomRID": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/geometry/g2/actspecific_gizmos.wl2?/debug_misc_horiz_4x4.prim].pc_prim",
+						"flag": "5F"
+					}
+				},
+				"m_eidParent": { "type": "SEntityTemplateReference", "value": "cafe3626e4adcec4", "postInit": true }
+			}
+		},
+		"cafeefc48c27a8a9": {
+			"parent": "cafeef8b303a48d8",
+			"name": "PlacementVolume",
+			"factory": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": -0.15, "z": 0.55 } }
+				},
+				"m_eidParent": { "type": "SEntityTemplateReference", "value": "cafe3626e4adcec4" },
+				"m_vGlobalSize": { "type": "SVector3", "value": { "x": 0.6, "y": 0.6, "z": 1 } }
+			}
+		},
+		"cafed251340035d7": {
+			"parent": "cafeef8b303a48d8",
+			"name": "PropHelper_Item_Placement",
+			"factory": "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_item_placement.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_item_placement.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": 0, "z": 0 } }
+				},
+				"m_eidParent": { "type": "SEntityTemplateReference", "value": "cafe3626e4adcec4" }
+			}
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}

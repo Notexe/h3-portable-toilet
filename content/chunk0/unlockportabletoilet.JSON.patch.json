@@ -1,0 +1,11 @@
+{
+	"file": "0057C2C3941115CA",
+	"type": "ORES",
+	"patch": [
+		{
+			"op": "add",
+			"path": "/PACKAGE_STARTING_PACKAGE/Properties/Unlocks/-",
+			"value": "PROP_FURNITURE_PORTABLETOILET"
+		}
+	]
+}
