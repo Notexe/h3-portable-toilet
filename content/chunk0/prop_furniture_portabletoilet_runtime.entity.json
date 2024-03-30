@@ -163,7 +163,8 @@
 					"MakeVisible": ["cafef6896123df92"],
 					"Disable": ["cafe5a8dd078710a"],
 					"Enable": ["cafea9697f89b0eb", "cafeb659be665f0f"],
-					"EnableCover": ["cafe29959cb90270"]
+					"EnableCover": ["cafe29959cb90270"],
+					"SetFalse": ["cafe7b29fd6753ab"]
 				}
 			}
 		},
@@ -174,7 +175,12 @@
 			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
 			"properties": { "Delay time (ms)": { "type": "int32", "value": 1500 } },
 			"events": {
-				"Out": { "Start": ["cafe764efad54950"], "Send": ["cafe6971abed01e6"], "Enable": ["cafe5a8dd078710a"] }
+				"Out": {
+					"Start": ["cafe764efad54950"],
+					"Send": ["cafe6971abed01e6"],
+					"Enable": ["cafe5a8dd078710a"],
+					"SetTrue": ["cafe7b29fd6753ab"]
+				}
 			}
 		},
 		"cafe5587113a944d": {
@@ -767,6 +773,45 @@
 				"m_bNPCUseCover": { "type": "bool", "value": true },
 				"m_bRailStartEnabled": { "type": "bool", "value": true },
 				"m_eidParent": { "type": "SEntityTemplateReference", "value": "cafee30eec9fde5a" }
+			}
+		},
+		"cafe716295576973": {
+			"parent": "cafe29fa9fb1d907",
+			"name": "AIItemInteresting",
+			"factory": "[modules:/zailocationinteresting.class].pc_entitytype",
+			"blueprint": "[modules:/zailocationinteresting.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": { "rotation": { "x": -0.0, "y": 0.0, "z": -0.0 }, "position": { "x": 0.0, "y": 0.0, "z": 0.0 } }
+				},
+				"m_rCondition": { "type": "SEntityTemplateReference", "value": "cafe7b29fd6753ab" },
+				"m_eidParent": { "type": "SEntityTemplateReference", "value": "cafee30eec9fde5a" },
+				"m_fAttractDistance": { "type": "float32", "value": 12.0 },
+				"m_rRefencingEntity": {
+					"type": "SEntityTemplateReference",
+					"value": { "ref": "cafef31e14bd1e26", "externalScene": null, "exposedEntity": "HM5ItemCCWeapon" }
+				}
+			}
+		},
+		"cafe7b29fd6753ab": {
+			"parent": "cafec2bdccbe8367",
+			"name": "VB Growing",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"events": { "OnTrue": { "Trigger": ["cafeb3ec16f5fe94"] } }
+		},
+		"cafeb3ec16f5fe94": {
+			"parent": "cafe29fa9fb1d907",
+			"name": "AISoundEvent",
+			"factory": "[modules:/zaisoundevententity.class].pc_entitytype",
+			"blueprint": "[modules:/zaisoundevententity.class].pc_entityblueprint",
+			"properties": {
+				"m_pSpatial": { "type": "SEntityTemplateReference", "value": "cafee30eec9fde5a" },
+				"m_eType": { "type": "EAIEventType", "value": "AIET_SoundInteresting" },
+				"m_fRange": { "type": "float32", "value": 6.0 },
+				"m_eSoundLoudness": { "type": "ZAISoundEvent.ELoudness", "value": "EAISEL_Default" },
+				"m_pSender": { "type": "SEntityTemplateReference", "value": "cafe716295576973", "postInit": true }
 			}
 		}
 	},
