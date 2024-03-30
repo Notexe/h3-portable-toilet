@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"id": "Notex.PortableToilet",
 	"name": "Portable Toilet",
 	"description": "This portable toilet is enhanced with cutting-edge military technology from Kronstadt Industries, designed to expand upon contact with the ground. Beyond its size-adjusting capabilities, this innovative device serves as an attraction point for any nearby NPCs feeling unwell, making it an indispensable tool for any discerning assassin.",
