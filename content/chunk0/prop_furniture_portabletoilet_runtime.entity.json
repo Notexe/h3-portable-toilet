@@ -129,7 +129,7 @@
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entityblueprint",
 			"properties": { "m_rValueEntity": { "type": "SEntityTemplateReference", "value": "cafe5587113a944d" } },
 			"events": {
-				"OnTrue": { "In": ["cafe2411d26f2da8"], "Enable": ["cafea9697f89b0eb"] },
+				"OnTrue": { "In": ["cafe2411d26f2da8"], "Enable": ["cafea9697f89b0eb", "cafeb659be665f0f"] },
 				"OnFalse": {
 					"Set": [
 						{
@@ -137,7 +137,7 @@
 							"value": { "type": "SVector3", "value": { "x": 0.1, "y": 0.1, "z": 0.1 } }
 						}
 					],
-					"Disable": ["cafea9697f89b0eb"],
+					"Disable": ["cafea9697f89b0eb", "cafeb659be665f0f"],
 					"MakeInvisible": ["cafef6896123df92"],
 					"Abort": ["cafe2411d26f2da8"]
 				}
@@ -658,6 +658,28 @@
 			"name": "SaveBlocker",
 			"factory": "[modules:/zsaveblockerentity.class].pc_entitytype",
 			"blueprint": "[modules:/zsaveblockerentity.class].pc_entityblueprint"
+		},
+		"cafeb659be665f0f": {
+			"parent": "cafe29fa9fb1d907",
+			"name": "AIVisionBlockerPlane",
+			"factory": "[modules:/zaivisionblockerplane.class].pc_entitytype",
+			"blueprint": "[modules:/zaivisionblockerplane.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": 0, "y": 0, "z": 0 },
+						"position": { "x": -0.10100000351667404, "y": 0.09700000286102295, "z": 1.2200000286102295 }
+					}
+				},
+				"m_bEnabled": { "type": "bool", "value": false },
+				"m_bAmbientOnly": { "type": "bool", "value": false },
+				"m_vPortalSize": {
+					"type": "SVector3",
+					"value": { "x": 1.4639999866485596, "y": 1.2347999811172485, "z": 2.4588301181793213 }
+				},
+				"m_eidParent": { "type": "SEntityTemplateReference", "value": "cafee30eec9fde5a" }
+			}
 		}
 	},
 	"propertyOverrides": [],
