@@ -129,7 +129,7 @@
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entityblueprint",
 			"properties": { "m_rValueEntity": { "type": "SEntityTemplateReference", "value": "cafe5587113a944d" } },
 			"events": {
-				"OnTrue": { "In": ["cafe2411d26f2da8"], "Enable": ["cafea9697f89b0eb", "cafeb659be665f0f"] },
+				"OnTrue": { "In": ["cafe2411d26f2da8"] },
 				"OnFalse": {
 					"Set": [
 						{
@@ -138,6 +138,7 @@
 						}
 					],
 					"Disable": ["cafea9697f89b0eb", "cafeb659be665f0f"],
+					"DisableCover": ["cafe29959cb90270"],
 					"MakeInvisible": ["cafef6896123df92"],
 					"Abort": ["cafe2411d26f2da8"]
 				}
@@ -160,7 +161,9 @@
 				"OnStopped": {
 					"EnablePickup": ["cafef31e14bd1e26"],
 					"MakeVisible": ["cafef6896123df92"],
-					"Disable": ["cafe5a8dd078710a"]
+					"Disable": ["cafe5a8dd078710a"],
+					"Enable": ["cafea9697f89b0eb", "cafeb659be665f0f"],
+					"EnableCover": ["cafe29959cb90270"]
 				}
 			}
 		},
@@ -678,6 +681,91 @@
 					"type": "SVector3",
 					"value": { "x": 1.4639999866485596, "y": 1.2347999811172485, "z": 2.4588301181793213 }
 				},
+				"m_eidParent": { "type": "SEntityTemplateReference", "value": "cafee30eec9fde5a" }
+			}
+		},
+		"cafe29959cb90270": {
+			"parent": "cafe29fa9fb1d907",
+			"name": "CoverPlanes",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"inputCopying": {
+				"EnableCover": { "EnableCover": ["cafe0ef5a4874718", "cafe26de769e72aa", "cafeea5ee43a6cbb"] },
+				"DisableCover": { "DisableCover": ["cafe0ef5a4874718", "cafe26de769e72aa", "cafeea5ee43a6cbb"] }
+			}
+		},
+		"cafe0ef5a4874718": {
+			"parent": "cafe29959cb90270",
+			"name": "CoverPlane00",
+			"factory": "[modules:/zcoverplane.class].pc_entitytype",
+			"blueprint": "[modules:/zcoverplane.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": { "rotation": { "x": 0, "y": 0, "z": -90 }, "position": { "x": -0.85, "y": 0.1, "z": 0 } }
+				},
+				"m_fCoverLength": { "type": "float32", "value": 1.26 },
+				"m_eCoverType": { "type": "ZCoverPlane.ECoverType", "value": "eCoverOnly" },
+				"m_eCoverSize": { "type": "ZCoverPlane.ECoverSize", "value": "eHighCover" },
+				"m_bStartEnabled": { "type": "bool", "value": false },
+				"m_bHeroCanDumpBody": { "type": "bool", "value": false },
+				"m_bHeroDumpedBodyHidden": { "type": "bool", "value": false },
+				"m_bHeroGiveFocusOnDumpBody": { "type": "bool", "value": false },
+				"m_bHeroPacifyPushedNPC": { "type": "bool", "value": false },
+				"m_bHeroPushNPCOverRail": { "type": "bool", "value": false },
+				"m_bNPCShootOverCover": { "type": "bool", "value": false },
+				"m_bNPCUseCover": { "type": "bool", "value": true },
+				"m_bRailStartEnabled": { "type": "bool", "value": true },
+				"m_eidParent": { "type": "SEntityTemplateReference", "value": "cafee30eec9fde5a" }
+			}
+		},
+		"cafe26de769e72aa": {
+			"parent": "cafe29959cb90270",
+			"name": "CoverPlane01",
+			"factory": "[modules:/zcoverplane.class].pc_entitytype",
+			"blueprint": "[modules:/zcoverplane.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": { "rotation": { "x": 0, "y": 0, "z": 90 }, "position": { "x": 0.65, "y": 0.1, "z": 0 } }
+				},
+				"m_fCoverLength": { "type": "float32", "value": 1.26 },
+				"m_eCoverType": { "type": "ZCoverPlane.ECoverType", "value": "eCoverOnly" },
+				"m_eCoverSize": { "type": "ZCoverPlane.ECoverSize", "value": "eHighCover" },
+				"m_bStartEnabled": { "type": "bool", "value": false },
+				"m_bHeroCanDumpBody": { "type": "bool", "value": false },
+				"m_bHeroDumpedBodyHidden": { "type": "bool", "value": false },
+				"m_bHeroGiveFocusOnDumpBody": { "type": "bool", "value": false },
+				"m_bHeroPacifyPushedNPC": { "type": "bool", "value": false },
+				"m_bHeroPushNPCOverRail": { "type": "bool", "value": false },
+				"m_bNPCShootOverCover": { "type": "bool", "value": false },
+				"m_bNPCUseCover": { "type": "bool", "value": true },
+				"m_bRailStartEnabled": { "type": "bool", "value": true },
+				"m_eidParent": { "type": "SEntityTemplateReference", "value": "cafee30eec9fde5a" }
+			}
+		},
+		"cafeea5ee43a6cbb": {
+			"parent": "cafe29959cb90270",
+			"name": "CoverPlane02",
+			"factory": "[modules:/zcoverplane.class].pc_entitytype",
+			"blueprint": "[modules:/zcoverplane.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": -0.1, "y": 0.73, "z": 0 } }
+				},
+				"m_fCoverLength": { "type": "float32", "value": 1.5 },
+				"m_eCoverType": { "type": "ZCoverPlane.ECoverType", "value": "eCoverOnly" },
+				"m_eCoverSize": { "type": "ZCoverPlane.ECoverSize", "value": "eHighCover" },
+				"m_bStartEnabled": { "type": "bool", "value": false },
+				"m_bHeroCanDumpBody": { "type": "bool", "value": false },
+				"m_bHeroDumpedBodyHidden": { "type": "bool", "value": false },
+				"m_bHeroGiveFocusOnDumpBody": { "type": "bool", "value": false },
+				"m_bHeroPacifyPushedNPC": { "type": "bool", "value": false },
+				"m_bHeroPushNPCOverRail": { "type": "bool", "value": false },
+				"m_bNPCShootOverCover": { "type": "bool", "value": false },
+				"m_bNPCUseCover": { "type": "bool", "value": true },
+				"m_bRailStartEnabled": { "type": "bool", "value": true },
 				"m_eidParent": { "type": "SEntityTemplateReference", "value": "cafee30eec9fde5a" }
 			}
 		}
