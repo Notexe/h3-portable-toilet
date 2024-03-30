@@ -451,7 +451,8 @@
 				"Completed": {
 					"EnterSafeZone": ["cafee93d2954a7b4"],
 					"Start": ["cafe1c5ece75a216"],
-					"In": ["cafe997d62db5b47"]
+					"In": ["cafe997d62db5b47"],
+					"Attach": ["cafe291e050e9a4c"]
 				}
 			}
 		},
@@ -552,7 +553,8 @@
 				"OnPressed": {
 					"ExitSafeZoneNoAnim": ["cafee93d2954a7b4"],
 					"SetFalse": ["cafee4c04af54d8f"],
-					"Abort": ["cafe997d62db5b47"]
+					"Abort": ["cafe997d62db5b47"],
+					"Detach": ["cafe291e050e9a4c"]
 				}
 			}
 		},
@@ -587,7 +589,8 @@
 			"blueprint": "[modules:/zheroboneattachentity.class].pc_entityblueprint",
 			"properties": {
 				"m_BoneName": { "type": "ZString", "value": "Pelvis" },
-				"m_spatial": { "type": "SEntityTemplateReference", "value": "cafeadd8b00b5596" }
+				"m_spatial": { "type": "SEntityTemplateReference", "value": "cafeadd8b00b5596" },
+				"m_bStartAttached": { "type": "bool", "value": false }
 			}
 		},
 		"cafeadd8b00b5596": {
@@ -649,21 +652,6 @@
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
 			"properties": { "m_rValueEntity": { "type": "SEntityTemplateReference", "value": "cafee4c04af54d8f" } },
 			"events": { "PollTrue": { "Send": ["cafe15ebe69b590c"] } }
-		},
-		"cafee7e42acc3c4b": {
-			"parent": "cafee278ebe8d06a",
-			"name": "GameEventListener",
-			"factory": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
-			"blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
-			"properties": { "m_eEvent": { "type": "EGameEventType", "value": "GET_SavegameRestored" } },
-			"events": { "EventOccurred": { "In": ["cafe1d045f5d0c3e"] } }
-		},
-		"cafe1d045f5d0c3e": {
-			"parent": "cafee278ebe8d06a",
-			"name": "SignalForkEntity_Void",
-			"factory": "[modules:/zsignalforkentity_void.class].pc_entitytype",
-			"blueprint": "[modules:/zsignalforkentity_void.class].pc_entityblueprint",
-			"events": { "Out01": { "Detach": ["cafe291e050e9a4c"] }, "Out02": { "Attach": ["cafe291e050e9a4c"] } }
 		},
 		"cafe5a8dd078710a": {
 			"parent": "cafe29fa9fb1d907",
