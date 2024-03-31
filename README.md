@@ -6,4 +6,4 @@ This portable toilet is enhanced with cutting-edge military technology from Kron
 
 ---
 
-`Notex.PortableToilet` v1.1.0, by Notex. This README was automatically generated from the mod's manifest.
+`Notex.PortableToilet` v1.1.1, by Notex. This README was automatically generated from the mod's manifest.
