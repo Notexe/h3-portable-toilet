@@ -129,7 +129,10 @@
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entityblueprint",
 			"properties": { "m_rValueEntity": { "type": "SEntityTemplateReference", "value": "cafe5587113a944d" } },
 			"events": {
-				"OnTrue": { "In": ["cafe2411d26f2da8"] },
+				"OnTrue": {
+					"In": ["cafe2411d26f2da8"],
+					"RemovePhysics": [{ "ref": "cafee30eec9fde5a", "value": { "type": "bool", "value": true } }]
+				},
 				"OnFalse": {
 					"Set": [
 						{

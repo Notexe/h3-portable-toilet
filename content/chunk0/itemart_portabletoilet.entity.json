@@ -11,7 +11,8 @@
 			"inputCopying": {
 				"SetVisible": { "SetVisible": ["cafe3626e4adcec4"] },
 				"SetInPhysicsWorld": { "SetInPhysicsWorld": ["cafe3626e4adcec4"] },
-				"KinematicBody": { "KinematicBody": ["cafe3626e4adcec4"] }
+				"KinematicBody": { "KinematicBody": ["cafe3626e4adcec4"] },
+				"RemovePhysics": { "RemovePhysics": ["cafe3626e4adcec4"] }
 			},
 			"propertyAliases": {
 				"m_eidParent": [{ "originalProperty": "m_eidParent", "originalEntity": "cafe3626e4adcec4" }],
