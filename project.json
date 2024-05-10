@@ -1,4 +1,12 @@
 {
-	"$schema": "https://raw.githubusercontent.com/atampy25/quickentity-editor-next/main/src/lib/project-schema.json",
-	"customPaths": []
+	"customPaths": [
+		"[assembly:/_pro/design/items/prop_notex_runtimes.template?/prop_furniture_portabletoilet_runtime.entitytemplate].pc_entitytemplate",
+		"[assembly:/_pro/design/items/prop_notex_runtimes.template?/prop_furniture_portabletoilet_runtime.entitytemplate].pc_entityblueprint",
+		"[assembly:/_pro/design/items/prop_notex_runtimes.template?/itemart_portabletoilet.entitytemplate].pc_entitytemplate",
+		"[assembly:/_pro/design/items/prop_notex_runtimes.template?/itemart_portabletoilet.entitytemplate].pc_entityblueprint",
+		"[assembly:/_pro/environment/geometry/props/toilets/portable_toilet_a.wl2?/portable_toilet_a_rigid.prim].pc_entitytype",
+		"[assembly:/_pro/environment/geometry/props/toilets/portable_toilet_a.wl2?/portable_toilet_a_rigid.prim].pc_prim",
+		"[assembly:/_pro/environment/geometry/props/toilets/portable_toilet_a.wl2?/portable_toilet_a_rigid.prim].pc_coll",
+		"portabletoilet_hudicon"
+	]
 }

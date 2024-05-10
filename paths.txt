@@ -1,8 +1,0 @@
-00AD8691C666A790.TEMP,[assembly:/_pro/design/items/prop_notex_runtimes.template?/prop_furniture_portabletoilet_runtime.entitytemplate].pc_entitytemplate
-00B906A3381D8E76.TBLU,[assembly:/_pro/design/items/prop_notex_runtimes.template?/prop_furniture_portabletoilet_runtime.entitytemplate].pc_entityblueprint
-004BD18685926DB3.TEMP,[assembly:/_pro/design/items/prop_notex_runtimes.template?/itemart_portabletoilet.entitytemplate].pc_entitytemplate
-0054E9ACD5C2DFAA.TBLU,[assembly:/_pro/design/items/prop_notex_runtimes.template?/itemart_portabletoilet.entitytemplate].pc_entityblueprint
-0006A3DC7AA88F1F.TEMP,[assembly:/_pro/environment/geometry/props/toilets/portable_toilet_a.wl2?/portable_toilet_a_rigid.prim].pc_entitytype
-001209B710101A22.PRIM,[assembly:/_pro/environment/geometry/props/toilets/portable_toilet_a.wl2?/portable_toilet_a_rigid.prim].pc_prim
-00117FEC8BA2E8D2.ALOC,[assembly:/_pro/environment/geometry/props/toilets/portable_toilet_a.wl2?/portable_toilet_a_rigid.prim].pc_coll
-00B5B3A68DAB616F.GFXI,portabletoilet_hudicon
